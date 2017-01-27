@@ -21,10 +21,12 @@ def max_2_sum arr
 end
 
 def sum_to_n? arr, n
-  arr.each do |current|
-    if arr.include?(n - current)
+  i = 0
+  loop do
+    if arr.include?(n - arr[i])
       return true
     end 
+    i += 1
     return false
 end
 
