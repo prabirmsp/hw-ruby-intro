@@ -22,12 +22,15 @@ end
 
 def sum_to_n? arr, n
   i = 0
+  val = false
   loop do
     if arr.include?(n - arr[i])
-      return true
-    end 
+      val = true
+      break
+    end
     i += 1
-    return false
+  end
+  return val
 end
 
 # Part 2
