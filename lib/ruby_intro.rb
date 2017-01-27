@@ -42,7 +42,7 @@ def hello(name)
 end
 
 def starts_with_consonant? s
-  return (s =~ /^(?![aeiou]).*/i) != nil
+  return (s =~ /^(?![aeiou]).*/i) && (s =~ /^[a-z].*/i)
 end
 
 def binary_multiple_of_4? s
