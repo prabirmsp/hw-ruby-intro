@@ -22,7 +22,7 @@ end
 
 def sum_to_n? arr, n
   arr.each do |current|
-    if arr.include? n - current
+    if arr.include?(n - current)
       return true
     end 
     return false
