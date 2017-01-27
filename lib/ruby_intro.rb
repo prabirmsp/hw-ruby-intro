@@ -46,7 +46,7 @@ def starts_with_consonant? s
 end
 
 def binary_multiple_of_4? s
-  return (s =~ /(1*0*)*00$/) != nil
+  return (s =~ /^(1*0*)*00$/) || s =~ /^00*$/
 end
 
 # Part 3
