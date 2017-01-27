@@ -9,11 +9,23 @@ def sum arr
 end
 
 def max_2_sum arr
-  # YOUR CODE HERE
+  sum = 0
+  arr.sort!
+  if arr.length >= 1
+    sum += arr[-1]
+    if arr.length >= 2
+      sum += arr[-2]
+    end
+  end
+  return sum
 end
 
 def sum_to_n? arr, n
-  # YOUR CODE HERE
+  arr.each do |current|
+    if arr.include? n - current
+      return true
+    end 
+    return false
 end
 
 # Part 2
