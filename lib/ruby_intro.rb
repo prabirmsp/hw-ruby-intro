@@ -51,6 +51,30 @@ end
 
 # Part 3
 
+
 class BookInStock
-# YOUR CODE HERE
+  def initialize my_isbn, my_price
+      @isbn = my_isbn
+      @price = my_price
+  end
+  
+  def isbn
+    @isbn
+  end
+  
+  def isbn= val
+    @isbn = val
+  end
+  
+  def price
+    @price
+  end
+  
+  def price= val
+    @price = val
+  end
+  
+  def price_as_string 
+    return "$%.2f" % [@price]
+  end
 end
