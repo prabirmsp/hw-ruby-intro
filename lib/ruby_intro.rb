@@ -7,7 +7,7 @@ def sum arr
   arr.each do |number| sum += number end
   return sum
 end
-
+=begin
 def max_2_sum arr
   sum = 0
   arr.sort!
@@ -27,7 +27,7 @@ def sum_to_n? arr, n
     end 
     return false
 end
-
+=end
 # Part 2
 
 def hello(name)
