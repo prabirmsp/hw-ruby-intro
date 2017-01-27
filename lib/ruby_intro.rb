@@ -54,6 +54,7 @@ end
 
 class BookInStock
   def initialize my_isbn, my_price
+    raise ArgumentError, "invalid args" if my_isbn.empty? || my_price <= 0
       @isbn = my_isbn
       @price = my_price
   end
