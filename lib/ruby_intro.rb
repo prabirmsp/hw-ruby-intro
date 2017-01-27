@@ -20,17 +20,17 @@ def max_2_sum arr
   return sum
 end
 
+
 def sum_to_n? arr, n
   i = 0
   val = false
-  while i < arr.length do
-    if arr.include?(n - arr[i])
-      val = true
-      puts arr[i]
-      puts n - arr[i]
-      break
+  for i in 0...arr.length
+    for j in i+1...arr.length 
+      if n == arr[i] + arr[j]
+        val = true
+        break
+      end 
     end
-    i += 1
   end
   return val
 end
