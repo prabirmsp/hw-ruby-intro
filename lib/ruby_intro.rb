@@ -19,7 +19,7 @@ def max_2_sum arr
   end
   return sum
 end
-=begin
+
 def sum_to_n? arr, n
   arr.each do |current|
     if arr.include?(n - current)
@@ -27,7 +27,7 @@ def sum_to_n? arr, n
     end 
     return false
 end
-=end
+
 # Part 2
 
 def hello(name)
