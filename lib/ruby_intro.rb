@@ -26,6 +26,8 @@ def sum_to_n? arr, n
   while i < arr.length do
     if arr.include?(n - arr[i])
       val = true
+      puts arr[i]
+      puts n - arr[i]
       break
     end
     i += 1
